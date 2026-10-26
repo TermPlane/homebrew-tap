@@ -3,6 +3,7 @@
 class TermCli < Formula
   desc "Term's terminal client, from a local tty to a machine through the relay"
   homepage "https://github.com/TermPlane/homebrew-tap"
+  version "0.25.1"
   license "MIT"
 
   if Hardware::CPU.arm?
