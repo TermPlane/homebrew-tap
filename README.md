@@ -18,8 +18,9 @@ macOS archive for the Mac's CPU (Apple silicon or Intel) from
 the SHA-256 the release published, and installs `term` with its licence
 notices. Each archive also has a minisign signature beside it (`.minisig`).
 
-The binary is ad-hoc signed, not notarized. Homebrew does not quarantine what
-a formula downloads, so `term` runs without a Gatekeeper prompt.
+The binary is ad-hoc signed, not notarized. It is installed as a formula, not
+a cask, because Homebrew quarantines a cask's download for Gatekeeper and not
+a formula's.
 
 Linux users install term-cli from the apt, dnf, zypper or pacman repository at
 https://pkg.hackinggate.com instead.
