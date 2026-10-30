@@ -3,21 +3,21 @@
 class TermCli < Formula
   desc "Term's terminal client, from a local tty to a machine through the relay"
   homepage "https://github.com/TermPlane/homebrew-tap"
-  version "0.26.0"
+  version "0.27.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://pkg.hackinggate.com/archives/term-cli/0.26.0/term-0.26.0-darwin-aarch64.tar.gz"
-    sha256 "8ca75850ca7d1a70c9d58aea4b4ef4272a0605924901e6072740c7097e0a71bb"
+    url "https://pkg.hackinggate.com/archives/term-cli/0.27.0/term-0.27.0-darwin-aarch64.tar.gz"
+    sha256 "d02e445ec23e2346d665b24d84b7c3a3f6e59fe2f83532487fff01fc4e740858"
   elsif OS.mac?
-    url "https://pkg.hackinggate.com/archives/term-cli/0.26.0/term-0.26.0-darwin-x86_64.tar.gz"
-    sha256 "1cf815740e1a0efe1b5eb2ebe6b27d8c25e6a90ff1f74b50e209d3b45b863bd5"
+    url "https://pkg.hackinggate.com/archives/term-cli/0.27.0/term-0.27.0-darwin-x86_64.tar.gz"
+    sha256 "c41d7850282d70f0eec9b4e06df52d469378ba35cfeaa8b4f75679d469388ffb"
   elsif Hardware::CPU.arm?
-    url "https://pkg.hackinggate.com/archives/term-cli/0.26.0/term-0.26.0-linux-aarch64.tar.gz"
-    sha256 "a6c0cefb90ec14d281385f105a86af8e5700ac5f31dce90de356ace1d98a072b"
+    url "https://pkg.hackinggate.com/archives/term-cli/0.27.0/term-0.27.0-linux-aarch64.tar.gz"
+    sha256 "417285eda92e32f61b78e428623bb56f1dc5eaec99495b935d2434f2f238db29"
   else
-    url "https://pkg.hackinggate.com/archives/term-cli/0.26.0/term-0.26.0-linux-x86_64.tar.gz"
-    sha256 "242494ca641a2b03801f5ec14f58d9b7a6a8deeb649b4f0d43e9400880a01688"
+    url "https://pkg.hackinggate.com/archives/term-cli/0.27.0/term-0.27.0-linux-x86_64.tar.gz"
+    sha256 "dbbff3326fee5c5d54b5403a6877f6fd8908ed3972562c8d0609d4c08e99e27d"
   end
 
   def install
