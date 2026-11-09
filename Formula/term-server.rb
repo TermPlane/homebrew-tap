@@ -3,15 +3,15 @@
 class TermServer < Formula
   desc "Term's PTY and WebSocket backend"
   homepage "https://github.com/TermPlane/homebrew-tap"
-  version "0.22.0"
+  version "0.22.1"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://pkg.hackinggate.com/archives/term-server/0.22.0/term-server-0.22.0-darwin-aarch64.tar.gz"
-    sha256 "d6f4e5736c96ee2d803160530fb5aa8dca4d8c8c81e76df83bb6681f382679d8"
+    url "https://pkg.hackinggate.com/archives/term-server/0.22.1/term-server-0.22.1-darwin-aarch64.tar.gz"
+    sha256 "4f53bb4a5b600c20c6d9f29d89b2d0d06371711e4235c8c8a5e6d78050253fea"
   else
-    url "https://pkg.hackinggate.com/archives/term-server/0.22.0/term-server-0.22.0-darwin-x86_64.tar.gz"
-    sha256 "cd8125b185223136cdc1cc71242883a9bd2eda08c4051b2901ecb731c6e195da"
+    url "https://pkg.hackinggate.com/archives/term-server/0.22.1/term-server-0.22.1-darwin-x86_64.tar.gz"
+    sha256 "a69728bff10156bdef0006819fc390b3424910013f418957f5a0f11ef50fb33c"
   end
 
   depends_on :macos
@@ -27,9 +27,12 @@ class TermServer < Formula
       front's account (_term), the directories and each mapped account's
       agent, mapping your identity to this account:
         sudo #{opt_libexec}/install-service.sh --binary #{opt_bin}/term-server --identity you@example.com
-      Then start the front as _term, and give the same option to every
-      restart:
+      Then start the front, which runs as _term. Started as _term, the
+      install stays yours, so brew upgrade and brew uninstall work without sudo:
         sudo brew services start --sudo-service-user=_term term-server
+      Homebrew's own line below works too: the front drops to its account
+      itself, but Homebrew then makes the install root's, and upgrading or
+      uninstalling it needs sudo.
       The front's settings (allowed hosts, Access, service mode) are
         /Library/Application Support/TermPlane/term.env
       and the logs are in /Library/Logs/TermPlane.
