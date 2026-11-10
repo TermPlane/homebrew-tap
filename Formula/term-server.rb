@@ -3,15 +3,15 @@
 class TermServer < Formula
   desc "Term's PTY and WebSocket backend"
   homepage "https://github.com/TermPlane/homebrew-tap"
-  version "0.22.1"
+  version "0.22.2"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://pkg.hackinggate.com/archives/term-server/0.22.1/term-server-0.22.1-darwin-aarch64.tar.gz"
-    sha256 "4f53bb4a5b600c20c6d9f29d89b2d0d06371711e4235c8c8a5e6d78050253fea"
+    url "https://pkg.hackinggate.com/archives/term-server/0.22.2/term-server-0.22.2-darwin-aarch64.tar.gz"
+    sha256 "f3192d964fb4266250dfc828ae2bedd228e7d3bc8a69d9d462a96164357f1008"
   else
-    url "https://pkg.hackinggate.com/archives/term-server/0.22.1/term-server-0.22.1-darwin-x86_64.tar.gz"
-    sha256 "a69728bff10156bdef0006819fc390b3424910013f418957f5a0f11ef50fb33c"
+    url "https://pkg.hackinggate.com/archives/term-server/0.22.2/term-server-0.22.2-darwin-x86_64.tar.gz"
+    sha256 "be840c252f3c67ba6567704e819c9d80a5e3cc32972a00d12a051a26207aff4d"
   end
 
   depends_on :macos
