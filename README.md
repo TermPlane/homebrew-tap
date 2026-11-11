@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Homebrew formulae for TermPlane's packages.
+Homebrew formulae, one per package.
 
 ```sh
 brew install termplane/tap/<formula>
