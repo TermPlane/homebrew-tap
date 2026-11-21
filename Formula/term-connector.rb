@@ -3,15 +3,15 @@
 class TermConnector < Formula
   desc "Term's outbound connection from a machine to the relay"
   homepage "https://github.com/TermPlane/homebrew-tap"
-  version "0.33.0"
+  version "0.33.1"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://pkg.termplane.com/archives/term-connector/0.33.0/term-connector-0.33.0-darwin-aarch64.tar.gz"
-    sha256 "d1e33d78e928dc8d0758c4c8c89ad4a7762152b800938ba47c5a31df01a8104e"
+    url "https://pkg.termplane.com/archives/term-connector/0.33.1/term-connector-0.33.1-darwin-aarch64.tar.gz"
+    sha256 "5ef316a1b09a7111ad6a9ca2d5674aacc1b8c0d70d745a4f6d9be4cbd4dd6dcf"
   else
-    url "https://pkg.termplane.com/archives/term-connector/0.33.0/term-connector-0.33.0-darwin-x86_64.tar.gz"
-    sha256 "abcfe554da93c0b49ff47af39e0f91c92c5b2b030f29a14bf01cb0aefb16a067"
+    url "https://pkg.termplane.com/archives/term-connector/0.33.1/term-connector-0.33.1-darwin-x86_64.tar.gz"
+    sha256 "96b63af30813106c6fc6e4aefe741f48d702d5a40e624b4ced797d2ba8da46a8"
   end
 
   depends_on :macos
